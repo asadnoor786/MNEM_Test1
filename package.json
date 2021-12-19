@@ -1,6 +1,7 @@
 {
   "name": "em",
   "version": "1.0.0",
+  "start":"node server.js",
   "description": "I Am Back After My Death",
   "main": "server.js",
   "dependencies": {
