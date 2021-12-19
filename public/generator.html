@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&amp;display=swap" rel="stylesheet">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/../JS/generator.js"></script>
+    <link rel="stylesheet" href="/../CSS/dashboard.css">
+    <link rel="stylesheet" href="/../CSS/generator.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+</head>
+<body onload="loadBody()">
+    <div id="head">
+        <a href="/logout"><button id="logout">Logout</button></a>
+        <img src="" alt="logo" class="head-img">
+    </div>
+    <div id="menu">
+        <ul id="ul2">
+            <a href="/dashboard"><li id="li1">Dashboard</li></a>
+            <a href="/generator"><li id="li2">Generator</li></a>
+            <a href="/bug"><li id="li3">Report Bugs</li></a>
+            <a href="/youtube"><li id="li4">Youtube</li></a>
+            <a href="/premium"><li id="li5">Premium Alts</li></a>
+        </ul>
+    </div>
+    <div id="header">
+        <img src="" class="head-img2">
+        <button id="btn1" onclick="openMenu()"></button>
+        <button id="btn2" onclick="openMenu()"></button>
+        <button id="btn3" onclick="openMenu()"></button>
+        
+        <ul id="ul1">
+            <a href="/dashboard"><li id="li1">Dashboard</li></a>
+            <a href="/generator"><li id="li2">Generator</li></a>
+            <a href="/bug"><li id="li3">Report Bugs</li></a>
+            <a href="/youtube"><li id="li4">Youtube</li></a>
+            <a href="/premium"><li id="li5">Premium Alts</li></a>
+            
+        </ul>
+    </div>
+    <form id="form1" action="" method="post">
+        <span id="head-form">Generate Your Minecraft<br>Account</span>
+        <input id="input1" type="email" disabled placeholder="Email">
+        <input id="input2" type="text" disabled placeholder="Password">
+        <button id="submit" type="submit">Generate</button>
+    </form>
+</body>
+</html>

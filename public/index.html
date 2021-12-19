@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/index.js"></script>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>*********** ******</title>
+</head>
+<body>
+    <div id="rest" onclick="closeMenu()"></div>
+    <div class="header">
+        <!-- For Desktop -->
+        <img src="" alt="icon" class="img-header">
+        <a href="/login"><span class="accounts">Accounts</span></a>
+        <a href="/login"><span class="login">Login</span></a>
+        <a href="signup"><span class="signup">Sign-Up</span></a>
+        <span class="bug">Report Problem</span>
+        <!-- For Mobile Devices -->
+        <button id="btn1" onclick="menuOpen()" class="btn1"></button>
+        <button id="btn2" onclick="menuOpen()" class="btn2"></button>
+        <button id="btn3" onclick="menuOpen()" class="btn3"></button>
+    </div>
+    <div class="menu">
+        <ul id="ul">
+            <li>Home</li>
+            <li>Accounts</li>
+            <a href="/signup"><li>Sign-Up</li></a>
+            <a href="/login"><li>Login</li></a>
+            <li>Report Problem</li>
+        </ul>
+    </div>
+    <img src="IMG/home2.jpg" id="img-container" class="img-container" alt="Here Img..">
+    <img src="IMG/home3.jpg" id="img-container2" class="img-container" alt="Here Img..">
+    <img src="IMG/home4.jpg" id="img-container3" class="img-container" alt="Here Img..">
+    <img src="IMG/mobile.jpg" id="img-container4" alt="Here Img..">
+    <img src="IMG/mobile2.jpg" id="img-container5" alt="Here Img..">
+    <img src="IMG/mobile3.jpg" id="img-container6" alt="Here Img..">
+    <div id="content">
+        <span class="body-head">Play On Hypixel Without Any Cost.</span>
+        <a href="/signup"><button id="get-started">Get Started</button></a>
+    </div>
+</body>
+</html>
