@@ -9,7 +9,7 @@ const io = require("socket.io")(http);
 const os = require("os");
 const path = require("path");
 const bodyParser = require("body-parser");
-const port = process.env.port || 80;
+const port = process.env.port || 3000;
 const mongoose = require("mongoose");
 const { Transport } = require("engine.io");
 const { StringDecoder } = require("string_decoder");
@@ -124,12 +124,12 @@ app.get("/", (req ,res) => {
     res.sendFile(__dirname+"/index.html");
 });
 
-app.get("/signup", (req, res) => {
+app.get("https://mnem-test1-9dtkqdv9m-asadnoor786.vercel.app/signup", (req, res) => {
     res.sendFile(__dirname+"/public/signup.html");
 });
 var req1;
 var ran1;
-app.post("/signup", (req, res) => {
+app.post("https://mnem-test1-9dtkqdv9m-asadnoor786.vercel.app/signup", (req, res) => {
     var Useremail = req.body.email;
     req1 = req.body;
     var a = res;
@@ -161,7 +161,7 @@ app.post("/signup", (req, res) => {
             console.log("nah", err);
            }
            else {
-               res.redirect("http://127.0.0.1/verifyEmail");
+               res.redirect("https://mnem-test1-9dtkqdv9m-asadnoor786.vercel.app/verifyEmail");
             
            }
     });
@@ -193,11 +193,11 @@ app.post("/signup", (req, res) => {
     });
 });
 
-app.get("/verifyEmail", (req, res) => {
+app.get("https://mnem-test1-9dtkqdv9m-asadnoor786.vercel.app/verifyEmail", (req, res) => {
     res.sendFile(__dirname+"/public/verify.html");
 });
 
-app.post("/verifyEmail", (req, res) => {
+app.post("https://mnem-test1-9dtkqdv9m-asadnoor786.vercel.app/verifyEmail", (req, res) => {
     var otp = req.body.otp;
     if(otp==ran1) {
         var que = {
@@ -215,7 +215,7 @@ app.post("/verifyEmail", (req, res) => {
             if(err) {
             }
             else {
-                res.redirect("http://127.0.0.1/login");
+                res.redirect("https://mnem-test1-9dtkqdv9m-asadnoor786.vercel.app/login");
             }
         })
         console.log("user matched!");
@@ -244,8 +244,8 @@ app.post("/verifyEmail", (req, res) => {
     }
 });
 
-app.get("/login", (req, res) => {
-    res.sendFile(__dirname+"/public/login.html");
+app.get("https://mnem-test1-9dtkqdv9m-asadnoor786.vercel.app/login", (req, res) => {
+    res.sendFile("https://mnem-test1-9dtkqdv9m-asadnoor786.vercel.app/public/login.html");
 });
 var name;
 app.post("/login", (req, res) => {
